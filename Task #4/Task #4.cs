@@ -1,7 +1,10 @@
 ﻿Console.Write("Введите число: ");
-int a = int.Parse (Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
 
-for (int b = -a; b <= a;  b+=1)
+for (int b = 2; b <= a; b += 2)
 {
-   Console.Write(b+" ");
+    if (b < a - 1)
+        Console.Write(b + ", ");
+        else
+        Console.Write(b + ".");
 }
